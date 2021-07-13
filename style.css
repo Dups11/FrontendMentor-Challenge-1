@@ -36,7 +36,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 72px 72px 55px;
+    padding: 72px 52px 52px 72px;
     
 }
 
@@ -65,6 +65,7 @@ body {
 display: flex;
 font-weight: 400;
 justify-content: space-between;
+width: 95%;
 }
 
 .card-stats div {
@@ -94,7 +95,10 @@ justify-content: space-between;
 
 .image {
     position: relative;
+    background-image: url(/images/image-header-desktop.jpg);
     background-color: hsl(277, 64%, 61%);
+    width: 100%;
+    background-blend-mode: multiply;
 }
 
 .image::before {
@@ -107,9 +111,64 @@ justify-content: space-between;
 
 }
 
-.image img {
+/* .image img {
     mix-blend-mode: multiply;
 
+} */
+
+/* Mobile View */
+
+@media screen and (max-width: 375px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        width: 327px;
+        height: 780px;
+        flex-direction: column-reverse;
+        margin: 0px 10px;
+        
+    }
+    
+    
+    .image {
+        
+        background-image: url(/images/image-header-mobile.jpg);
+        height: 240px;
+        background-size: cover;
+        width: 100%;
+        
+    }
+    
+    .card-title {
+        margin-bottom: 15px;
+        font-size: 27px;
+
+    }
+
+    .card-main-content {
+        justify-content: space-around;
+        text-align: center;
+        padding: 35px 25px 30px;
+        flex-grow: 1;
+        width: 100%;
+    }
+    
+    .card-content {
+        font-size: 15px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    
+    .card-stats {
+        margin-top: 45px;
+        flex-direction: column;
+        flex-grow: 1;
+    }
 }
 
 /* Attribution Frontend Mentor.io */
