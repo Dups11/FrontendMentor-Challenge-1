@@ -95,7 +95,7 @@ width: 95%;
 
 .image {
     position: relative;
-    background-image: url(/images/image-header-desktop.jpg);
+    background-image: url(./images/image-header-desktop.jpg);
     background-color: hsl(277, 64%, 61%);
     width: 100%;
     background-blend-mode: multiply;
@@ -136,7 +136,7 @@ width: 95%;
     
     .image {
         
-        background-image: url(/images/image-header-mobile.jpg);
+        background-image: url(./images/image-header-mobile.jpg);
         height: 240px;
         background-size: cover;
         width: 100%;
